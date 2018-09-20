@@ -20,7 +20,7 @@ The proposal evaluates the potential of convolutional neural networks in classif
 **y** - store supervisor/target after augmentation.<br>
 
 Pre-processing refers to the transformations applied to our data before feeding it to the algorithm. First of all the  dataset is cloned from the github repository into google colab environment. After cloning, i fetched every audio clips name into variable **audio_files** and then i explored some dataset’s example in the form of spectrogram, waveform and audible form. After that i loaded the audio clips into the variable **temporary_audio_files**. Keep in mind **audio_files** contain files name whereas **temporary_audio_files** keeps the audio clips data, after that processed data augmentation and then number of audio files becomes 6000.the audio clips are coverted into spectrogram and then model is trainind and also calculated training time.
-## spectrogram generation
+## Spectrogram generation
 
 For generating spectrogram i used librosa python library, by using the function melspectrogram .
 
