@@ -22,17 +22,19 @@ The proposal evaluates the potential of convolutional neural networks in classif
 Pre-processing refers to the transformations applied to our data before feeding it to the algorithm. First of all the  dataset is cloned from the github repository into google colab environment. After cloning, i fetched every audio clips name into variable **audio_files** and then i explored some dataset’s example in the form of spectrogram, waveform and audible form. After that i loaded the audio clips into the variable **temporary_audio_files**. Keep in mind **audio_files** contain files name whereas **temporary_audio_files** keeps the audio clips data, after that processed data augmentation and then number of audio files becomes 6000.the audio clips are coverted into spectrogram and then model is trainind and also calculated training time.
 ## spectrogram generation
 
-For generating spectrogram i used librosa python library, by using the function melspectrogram . Where data and sampling_rate already explained under common section. 
+For generating spectrogram i used librosa python library, by using the function melspectrogram .
+
 ![spectrogram](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_019.png)
 
-**<center>spectrogram = librosa.feature.melspectrogram( data, sampling_rate )</center>**
+**spectrogram = librosa.feature.melspectrogram( data, sampling_rate )**
 
 ## Waveform generation.
 
-For generating waveform i used librosa python library, by using the function waveplot. Where data and sampling_rate already explained under common section. 
+For generating waveform i used librosa python library, by using the function waveplot.
+
 ![Waveform](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_020.png)
 
-**<center> WaveForm = librosa.display.waveplot(data, sr=sampling_rate)</center>**
+**WaveForm = librosa.display.waveplot( data, sr = sampling_rate )**
 
 ## Audible  sound generation.
 
@@ -40,7 +42,7 @@ For generating audible sound i used IPython library, by using the function Audio
 
 ![Audible](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_021.png)
 
-**<center>Audible = Audio( data, rate = sampling_rate )</center>**
+**Audible = Audio( data, rate = sampling_rate )**
 
 
 
