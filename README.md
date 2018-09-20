@@ -44,9 +44,7 @@ For generating audible sound i used IPython library, by using the function Audio
 
 **Audible = Audio( data, rate = sampling_rate )**
 
-
-
-
+Runn the prediction 5 to 10 times to check the prediction.
 
 
 
