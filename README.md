@@ -1,4 +1,7 @@
-# <center> Environmental Sound classification</center>
+# <center> Environmental-Sound-Classification-ESC-using-neural-network</center>
+<li>Audio feature extraction and classification with the ECS-50 data set audio dataset ECS-50 audio data is included. 
+<li>It consists of 50 classes of different environmental sounds (sea waves, bay crying, etc.)</li>
+<li>The main goal is to compare classification accuracies for the 6 tested classifiers.</li>
 ## Overview
 The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. The model consisting one Relu activation and softmax activation with zero dropout. The audio set is converted into spectrogram and then model is trained. The classification is classified in 5 classes. The keras library is used over tensorflow.
 
