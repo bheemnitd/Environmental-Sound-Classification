@@ -1,5 +1,6 @@
 # <center> Environmental Sound Classification(ESC) </center>
-![spectrogram and wave](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_001.png)
+---
+![spectrogram and wave](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/download.png)
 The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
 
 The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
