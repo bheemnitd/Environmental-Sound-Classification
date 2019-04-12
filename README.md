@@ -1,7 +1,18 @@
-# <center> Environmental-Sound-Classification-ESC-using-neural-network</center>
-<li>Audio feature extraction and classification with the ECS-50 data set audio dataset ECS-50 audio data is included. 
-<li>It consists of 50 classes of different environmental sounds (sea waves, bay crying, etc.)</li>
-<li>The main goal is to compare classification accuracies for the 6 tested classifiers.</li>
+# <center> Environmental Sound Classification(ESC) </center>
+<li>Context</li>
+Audio classification is often proposed as MFCC classification problem. With this dataset, we intend to give attention to raw audio classification, as performed in the Wavenet network.
+
+<b>Mel-Frequency Ceptral Coeffienents (MFCCs)<b> are generally the features of choice for both audio classification and content-based retrieval due to their proven performance. This paper presents alternate feature sets that not only consistently outperform MFCC features but are simpler to calculate.
+  
+<li>Content</li>
+The dataset consists in 50 WAV files sampled at 16KHz for 50 different classes.
+
+To each one of the classes, corresponds 40 audio sample of 5 seconds each. All of these audio files have been concatenated by class in order to have 50 wave files of 3 min. 20sec.
+
+In our example notebook, we show how to access the data and visualize a piece of it.
+
+Acknowledgements
+We have not much credit in proposing the dataset here. Much of the work have been done by the authors of the ESC-50 Dataset for Environmental Sound Classification.
 ## Overview
 The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. The model consisting one Relu activation and softmax activation with zero dropout. The audio set is converted into spectrogram and then model is trained. The classification is classified in 5 classes. The keras library is used over tensorflow.
 
