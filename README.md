@@ -98,19 +98,20 @@ The proposal evaluates the potential of convolutional neural networks in classif
 
 ## Setup
 The neccessary libraries to run the code.
-## re
-## cv2
-## os
-## numpy as np
-## pandas as pd
-## librosa
-## librosa
-## matplotlib
-## tqdm
-## scipy
-## IPython
-## sklearn
-## keras
+<li> re
+<li> cv2
+<li> os
+<li> numpy as np
+<li> pandas as pd
+<li> librosa
+<li> librosa
+<li> matplotlib
+<li> tqdm
+<li> scipy
+<li> IPython
+<li> sklearn
+<li> tensorflow/tensorflow-gpu
+<li> keras
 
 ### Variables Discription<br>
 **data** - store one audio file.<br>
