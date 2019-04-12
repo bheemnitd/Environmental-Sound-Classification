@@ -6,11 +6,11 @@ The dataset consists of 5-second-long recordings organized into 50 semantical cl
   
 <table>
   <tr><h3>
-    <td>Animals</td>
-    <td>Natural soundscapes & water sounds</td>
-    <td>Human, non-speech sounds</td>	
-    <td>Interior/domestic sounds</td>
-    <td>Exterior/urban noises</td></h3>
+    <th align = 'left' >Animals</th>
+    <td align = 'left' >Natural soundscapes & water sounds</th>
+    <td align = 'left' >Human, non-speech sounds</th>	
+    <td align = 'left' >Interior/domestic sounds</th>
+    <td align = 'left' >Exterior/urban noises</th>
   </tr>
   <tr>
     <td>Dog</td>
