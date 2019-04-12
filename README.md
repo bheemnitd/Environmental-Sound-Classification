@@ -3,14 +3,14 @@
 The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
 
 The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
-  
+
 <table>
   <tr><h3>
     <th align = 'left' >Animals</th>
-    <td align = 'left' >Natural soundscapes & water sounds</th>
-    <td align = 'left' >Human, non-speech sounds</th>	
-    <td align = 'left' >Interior/domestic sounds</th>
-    <td align = 'left' >Exterior/urban noises</th>
+    <th align = 'left' >Natural soundscapes & water sounds</th>
+    <th align = 'left' >Human, non-speech sounds</th>	
+    <th align = 'left' >Interior/domestic sounds</th>
+    <th align = 'left' >Exterior/urban noises</th>
   </tr>
   <tr>
     <td>Dog</td>
@@ -83,12 +83,17 @@ The dataset consists of 5-second-long recordings organized into 50 semantical cl
     <td>Hand saw
 </td>
   </table>
-To each one of the classes, corresponds 40 audio sample of 5 seconds each. All of these audio files have been concatenated by class in order to have 50 wave files of 3 min. 20sec.
 
-In our example notebook, we show how to access the data and visualize a piece of it.
+Clips in this dataset have been manually extracted from public field recordings gathered by the <a href = http://freesound.org> Freesound.org</a> project. The dataset has been prearranged into 5 folds for comparable cross-validation, making sure that fragments from the same original source file are contained in a single fold.
 
-Acknowledgements
-We have not much credit in proposing the dataset here. Much of the work have been done by the authors of the ESC-50 Dataset for Environmental Sound Classification.
+A more thorough description of the dataset is available in the original <a href = http://karol.piczak.com/papers/Piczak2015-ESC-Dataset.pdf> paper </a> with some supplementary materials on GitHub: <a href =https://github.com/karoldvl/paper-2015-esc-dataset>ESC: Dataset for Environmental Sound Classification - paper replication data.</a>
+
+## Download
+The dataset can be downloaded as a single .zip file (~600 MB):
+
+<a href = https://github.com/karoldvl/ESC-50/archive/master.zip> Download ESC-50 dataset</a>
+
+
 ## Overview
 The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. The model consisting one Relu activation and softmax activation with zero dropout. The audio set is converted into spectrogram and then model is trained. The classification is classified in 5 classes. The keras library is used over tensorflow.
 
