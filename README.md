@@ -5,8 +5,8 @@ The ESC-50 dataset is a labeled collection of 2000 environmental audio recording
 The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
   
 <table>
-  <tr>
-    <th>Animals</th>
+  <tr><aline = left>
+    <th style="text-align:center;">Animals</th>
     <th>Natural soundscapes & water sounds</th>
     <th>Human, non-speech sounds</th>	
     <th>Interior/domestic sounds</th>
