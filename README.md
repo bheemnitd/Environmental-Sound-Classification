@@ -118,23 +118,16 @@ Install these libraries to run the code.
 **sampling_rate** - which keep the flow of number of element per second of audio files.<br>
 **spectrogram** - keep spectrogram of audio file.<br>
 **augmented_audio_files** - store audio with white noise of original files and then combined with **audio_files**<br>
-**SPEC_H** - spectrogram height.
-**SPEC_W** - spectrogram width.
-**audio** - one audio file.
-**x** - x is just a temporary variable for get audio file **x_train** after coverting into spectrogram assigned to the same **x_train** variable.
+**SPEC_H** - spectrogram height.<br>
+**SPEC_W** - spectrogram width.<br>
+**audio** - one audio file.<br>
+**x** - x is just a temporary variable for get audio file **x_train** after coverting into spectrogram assigned to the same **x_train** variable.<br>
 
 ##Testing on Unseen data.
 ![spectrogram](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_004.png)
-
-
-
-
 ![Waveform](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_005.png)
-
-
-
 ![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_006.png)
-
 ![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_007.png)
-
+## Summary of model.
+![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_008.png)
 
