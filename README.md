@@ -1,12 +1,16 @@
 # <center> Environmental Sound Classification(ESC) </center>
-<li>Context</li>
-Audio classification is often proposed as MFCC classification problem. With this dataset, we intend to give attention to raw audio classification, as performed in the Wavenet network.
 
-<b>Mel-Frequency Ceptral Coeffienents (MFCCs)<b> are generally the features of choice for both audio classification and content-based retrieval due to their proven performance. This paper presents alternate feature sets that not only consistently outperform MFCC features but are simpler to calculate.
+The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
+
+The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
   
-<li>Content</li>
-The dataset consists in 50 WAV files sampled at 16KHz for 50 different classes.
-
+<table>
+  <tr><th>Animals</th>
+    <th>Natural soundscapes & water sounds</th>
+    <th>Human, non-speech sounds</th>	
+    <th>Interior/domestic sounds</th>
+    <th>Exterior/urban noises</th>
+  </tr>
 To each one of the classes, corresponds 40 audio sample of 5 seconds each. All of these audio files have been concatenated by class in order to have 50 wave files of 3 min. 20sec.
 
 In our example notebook, we show how to access the data and visualize a piece of it.
