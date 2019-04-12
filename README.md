@@ -1,5 +1,4 @@
 # <center> Environmental Sound Classification(ESC) </center>
----
 ![spectrogram and wave](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/download.png)
 The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
 
