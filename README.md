@@ -91,12 +91,27 @@ A more thorough description of the dataset is available in the original <a href 
 The dataset can be downloaded as a single .zip file (~600 MB):
 
 <a href = https://github.com/karoldvl/ESC-50/archive/master.zip> Download ESC-50 dataset</a>
-<a href = >superviser(y/targets)</a>
+<a href ='https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/classes.csv'>superviser(y/targets)</a>
 
 ## Project Overview
-The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds.The targets are already fetchedin superviser.csv file
+The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. We trained the model and observed that existing dataset is insufficient to get the good accuracy, So we did <b>Data Augmentation</b> We added white noise to copy of existing dataset, so now we have 4000 training example. The 10% data is used to test the model and 10% of remaining data to evaluate the model.
 
-## Data Preprocessing
+## Setup
+The neccessary libraries to run the code.
+## re
+## cv2
+## os
+## numpy as np
+## pandas as pd
+## librosa
+## librosa
+## matplotlib
+## tqdm
+## scipy
+## IPython
+## sklearn
+## keras
+
 ### Variables Discription<br>
 **data** - store one audio file.<br>
 **sampling_rate** - keep sampling rate of audio file.<br>
