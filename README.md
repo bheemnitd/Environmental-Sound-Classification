@@ -94,10 +94,10 @@ The dataset can be downloaded as a single .zip file (~600 MB):
 <a href ='https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/classes.csv'>superviser(y/targets)</a>
 
 ## Project Overview
-The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. We trained the model and observed that existing dataset is insufficient to get the good accuracy, So we did <b>Data Augmentation</b> We added white noise to copy of existing dataset, so now we have 4000 training example. The 10% data is used to test the model and 10% of remaining data to evaluate the model.
+The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. We trained the model and observed that existing dataset is insufficient to get the good accuracy, So we did <b>Data Augmentation</b> We added white noise to copy of existing dataset, so now we have 4000 training example. The 10% data is used to test the model and 10% of remaining data to evaluate the model. After augmentation we trained the model with 4 Conv2D, 4 relu activaion, 1 softmax activation, 4 MaxPooling2D, 1 Dropout and 1 Desnse layer. We used 30 epochs and achived % of training accuracy and % of Validation accuracy.
 
 ## Setup
-The neccessary libraries to run the code.
+Install these libraries to run the code.
 <li> re
 <li> cv2
 <li> os
@@ -113,45 +113,28 @@ The neccessary libraries to run the code.
 <li> tensorflow/tensorflow-gpu
 <li> keras
 
-### Variables Discription<br>
-**data** - store one audio file.<br>
-**sampling_rate** - keep sampling rate of audio file.<br>
-**spectrogram** - keep one spectrogram data to plot.<br>
-**audio_files** - store all audio files name.<br>
-**number_of_audio_files** - total number(counting) of original audio files.<br>
-**temporary_audio_file**  -  one one original audio file.<br>
-**temporary_audio_files** -  store all original audio files.<br>
-**size_of_audio_files** - size of one audio files.<br>
-**augmented_audio_files1** - store audio with white noise of original files..<br>
-**augmented_audio_files2** - store shifted audio of original files.<br>
-**augmented_audio_files3** - store original(temporary_audio_files) + augmented_audio_files1 + augmented_audio_files2, so the number of files in augmented_audio_files3 variable becomes 6000.<br>
-**number_of_audio_files** - store total number(counting) of original audio files.<br>
-**number_of_training_example** - store number of training example after augmentation.<br>
-**y** - store supervisor/target after augmentation.<br>
+## Variables Discription<br>
+**audio_files** - store all audio file and corresponding class.<br>
+**sampling_rate** - which keep the flow of number of element per second of audio files.<br>
+**spectrogram** - keep spectrogram of audio file.<br>
+**augmented_audio_files** - store audio with white noise of original files and then combined with **audio_files**<br>
+**SPEC_H** - spectrogram height.
+**SPEC_W** - spectrogram width.
+**audio** - one audio file.
+**x** - x is just a temporary variable for get audio file **x_train** after coverting into spectrogram assigned to the same **x_train** variable.
 
-Pre-processing refers to the transformations applied to our data before feeding it to the algorithm. First of all the  dataset is cloned from the github repository into google colab environment. After cloning, i fetched every audio clips name into variable **audio_files** and then i explored some dataset’s example in the form of spectrogram, waveform and audible form. After that i loaded the audio clips into the variable **temporary_audio_files**. Keep in mind **audio_files** contain files name whereas **temporary_audio_files** keeps the audio clips data, after that processed data augmentation and then number of audio files becomes 6000.the audio clips are coverted into spectrogram and then model is trainind and also calculated training time.
-## Spectrogram generation
+##Testing on Unseen data.
+![spectrogram](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_004.png)
 
-For generating spectrogram i used librosa python library, by using the function melspectrogram .
 
-![spectrogram](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_019.png)
 
-**spectrogram = librosa.feature.melspectrogram( data, sampling_rate )**
 
-## Waveform generation.
+![Waveform](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_005.png)
 
-For generating waveform i used librosa python library, by using the function waveplot.
 
-![Waveform](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_020.png)
 
-**WaveForm = librosa.display.waveplot( data, sr = sampling_rate )**
+![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_006.png)
 
-## Audible  sound generation.
+![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_007.png)
 
-For generating audible sound i used IPython library, by using the function Audio
 
-![Audible](https://github.com/bheemnitd/Environmental-Sound-Classification-Keras/blob/master/Selection_021.png)
-
-**Audible = Audio( data, rate = sampling_rate )**
-
-Runn the prediction 5 to 10 times to check the prediction.
