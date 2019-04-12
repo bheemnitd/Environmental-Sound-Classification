@@ -90,7 +90,7 @@ A more thorough description of the dataset is available in the original <a href 
 ## Download
 The dataset can be downloaded as a single .zip file (~600 MB):
 
-<a href = https://github.com/karoldvl/ESC-50/archive/master.zip> Download ESC-50 dataset</a>
+<a href = https://github.com/karoldvl/ESC-50/archive/master.zip> Download ESC-50 dataset</a><br>
 <a href='https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/classes.csv'>classes</a>
 
 ## Project Overview
