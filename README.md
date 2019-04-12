@@ -5,12 +5,84 @@ The ESC-50 dataset is a labeled collection of 2000 environmental audio recording
 The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
   
 <table>
-  <tr><th>Animals</th>
+  <tr>
+    <th>Animals</th>
     <th>Natural soundscapes & water sounds</th>
     <th>Human, non-speech sounds</th>	
     <th>Interior/domestic sounds</th>
     <th>Exterior/urban noises</th>
   </tr>
+  <tr>
+    <td>Dog</td>
+    <td>Rain</td>	
+    <td>Crying baby</td>
+    <td>Door knock</td>
+    <td>Helicopter</td>
+  </tr>
+  <tr>
+    <td>Roosters</td>
+    <td>Sea waves</td>
+    <td>Sneezing</td>	
+    <td>Mouse click</td>
+    <td>Chainsaw</td>
+  </tr>
+  <tr>
+    <td>Pig</td>
+    <td>Crackling fire</td>
+    <td>Clapping</td>	
+    <td>Keyboard typing</td>
+    <td>Siren</td>
+  </tr>
+  <tr>
+    <td>Cow</td>
+    <td>Crickets</td>
+    <td>Breathing</td>	
+    <td>Door, wood creaks</td>
+    <td>Car horn</td>
+  </tr>
+  <tr>
+    <td>Frog</td>
+    <td>Chirping birds</td>
+    <td>Coughing</td>	
+    <td>Can opening</td>
+    <td>Engine</td>
+  </tr>
+  <tr>
+    <td>Cat</td>
+    <td>Water drops	</td>
+    <td>Footsteps</td>	
+    <td>Washing machine	</td>
+    <td>Train</td>
+  </tr>
+  <tr>
+    <td>Hen</td>
+    <td>Wind	</td>
+    <td>Laughing</td>	
+    <td>Vacuum cleaner</td>
+    <td>Church bells</td>
+  </tr>
+  <tr>
+    <td>Insects (flying)</td>
+    <td>Pouring water</td>
+    <td>Brushing teeth</td>	
+    <td>Clock alarm</td>
+    <td>Airplane</td>
+  </tr>
+  <tr>
+    <td>Sheep</td>
+    <td>Toilet flush</td>
+    <td>Snoring</td>	
+    <td>Clock tick</td>
+    <td>Fireworks</td>
+  </tr>
+  <tr>
+    <td>Crow</td>
+    <td>Thunderstorm</td>
+    <td>Drinking, sipping</td>	
+    <td>Glass breaking	</td>
+    <td>Hand saw
+</td>
+  </table>
 To each one of the classes, corresponds 40 audio sample of 5 seconds each. All of these audio files have been concatenated by class in order to have 50 wave files of 3 min. 20sec.
 
 In our example notebook, we show how to access the data and visualize a piece of it.
