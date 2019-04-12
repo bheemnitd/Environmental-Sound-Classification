@@ -1,9 +1,8 @@
 # <center> Environmental Sound Classification(ESC) </center>
-
+![spectrogram and wave](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/Selection_001.png)
 The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
 
 The dataset consists of 5-second-long recordings organized into 50 semantical classes (with 40 examples per class) loosely arranged into 5 major categories:
-
 <table>
   <tr><h3>
     <th align = 'left' >Animals</th>
@@ -92,10 +91,10 @@ A more thorough description of the dataset is available in the original <a href 
 The dataset can be downloaded as a single .zip file (~600 MB):
 
 <a href = https://github.com/karoldvl/ESC-50/archive/master.zip> Download ESC-50 dataset</a>
+<a href = >superviser(y/targets)</a>
 
-
-## Overview
-The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. The model consisting one Relu activation and softmax activation with zero dropout. The audio set is converted into spectrogram and then model is trained. The classification is classified in 5 classes. The keras library is used over tensorflow.
+## Project Overview
+The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds.The targets are already fetchedin superviser.csv file
 
 ## Data Preprocessing
 ### Variables Discription<br>
@@ -140,8 +139,3 @@ For generating audible sound i used IPython library, by using the function Audio
 **Audible = Audio( data, rate = sampling_rate )**
 
 Runn the prediction 5 to 10 times to check the prediction.
-
-
-
-
-
