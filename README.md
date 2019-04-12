@@ -101,8 +101,8 @@ Install these libraries to run the code.
 <li> re
 <li> cv2
 <li> os
-<li> numpy as np
-<li> pandas as pd
+<li> numpy
+<li> pandas
 <li> librosa
 <li> librosa
 <li> matplotlib
