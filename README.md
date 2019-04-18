@@ -127,7 +127,6 @@ Install these libraries to run the code.
 ## Testing on Unseen data.
 ![spectrogram](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_009.png)
 ![Waveform](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_010.png)
-![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_010.png)
 ![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_011.png)
 ## model summary.
 ![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_012.png)
