@@ -1,7 +1,7 @@
 # <center> Environmental Sound Classification(ESC) </center>
 ![spectrogram and wave](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_001.png)
 ## Project Overview
-The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. We trained the model and observed that existing dataset is insufficient to get the good accuracy, So we did <b>Data Augmentation</b> We added white noise to copy of existing dataset, so now we have 4000 training example. The 10% data is used to test the model and 10% of remaining data to evaluate the model. After augmentation we trained the model with 4 Conv2D, 5 relu activaion, 4 MaxPooling2D, 1 softmax activation, 1 Dropout and 2 Desnse layer. We used 30 epochs and achived 95% of training accuracy and 91% of Validation accuracy.
+The proposal evaluates the potential of convolutional neural networks in classifying short audio clips of environmental sounds. We trained the model and observed that existing dataset is insufficient to get the good accuracy, So we did <b>Data Augmentation</b> We added white noise to copy of existing dataset, so now we have 4000 training example. The 10% data is used to test the model and 10% of remaining data to evaluate the model. After augmentation we trained the model with 4 Conv2D, 5 relu activation, 4 MaxPooling2D, 1 softmax activation, 1 Dropout and 2 Dense layer. We used 30 epochs and achieved 95% of training accuracy and 91% of Validation accuracy.
 ## Dataset
 The ESC-50 dataset is a labeled collection of 2000 environmental audio recordings of environmental sound.
 
