@@ -105,7 +105,6 @@ Install these libraries to run the code.
 <li> numpy
 <li> pandas
 <li> librosa
-<li> librosa
 <li> matplotlib
 <li> tqdm
 <li> scipy
