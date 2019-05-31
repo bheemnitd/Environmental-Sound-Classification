@@ -128,5 +128,5 @@ Install these libraries to run the code.
 ![Waveform](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_010.png)
 ![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_011.png)
 ## model summary.
-![Audible](https://github.com/bheemnitd/EnvironmentalSoundClassificationFromKeras/blob/master/images/Selection_012.png)
+![Audible](https://github.com/bheemnitd/ENVIRONMENTAL-SOUND-CLASSIFICATION/blob/master/images/Selection_006.jpg)
 
