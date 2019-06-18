@@ -110,7 +110,7 @@ Install these libraries to run the code.
 <li> scipy
 <li> IPython
 <li> sklearn
-<li> tensorflow/tensorflow-gpu
+<li> tensorflow
 <li> keras
 
 ## Variables Discription<br>
